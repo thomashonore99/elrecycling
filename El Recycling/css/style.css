@@ -1,0 +1,465 @@
+/* -------------- CSS RESET ------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: #fdfdfb;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----------------------------------- Hero Billede ----------------------------*/
+.hero-image {
+    position: relative;
+    text-align: center;
+    background-image: url('../img/hero_billede.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Billedet fylder hele skærmen */
+  }
+  
+  .trustpilot {
+    display: flex;
+    padding: 40px;
+    height: 100px;
+  }
+
+  .hero-text {
+    position: absolute;
+    font-size: 40px;
+    color: #162441;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-text h1{
+        padding-bottom: 20px;
+        font-size: larger;
+  }
+
+  .læs-mere-knap {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .button-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #6cc73e;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 20px 80px;
+    margin: 0 35px;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: #bedb86;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .scroll-down-arrow {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    transform: rotate(90deg);
+    cursor: pointer;
+    animation: scrollAnimation 1s infinite alternate;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(45deg) translateY(10px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+  
+  .scroll-down-arrow:hover {
+    animation: scrollAnimation 1s infinite alternate;
+  }
+  
+  #content {
+    height: 1200px;
+  }
+/* --------------------------------- forside content --------------------------- */
+
+.forside-overskrift {
+  position: absolute;
+  font-size: 60px;
+  color: #162441;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.forside-overskrift {
+  position: absolute;
+  font-size: 60px;
+  color: #162441;
+  margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.streg-container {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 10px);
+  display: flex;
+  justify-content: center;
+}
+
+.tynd-streg {
+  width: 50%;
+  border-top: 1px solid black;
+  margin-top: 150px;
+}
+
+/*--------- Produktbilleder ---------*/
+
+
+
+.kolonne-container {
+  display: flex;
+  justify-content: center;
+}
+
+.kolonne {
+  width: 15%;
+  text-align: center;
+  margin-top: 210px;
+
+}
+
+.kolonne img {
+  width: 100%;
+}
+
+.kolonne h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.kolonne p {
+  margin-top: 5px;
+}
+
+.laes-mere {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #6cc73e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*---------- bunden af forsiden ----------*/
+
+.kolonne2-container {
+  display: flex;
+  justify-content: center;
+}
+
+.kolonne2 {
+  width: 12%;
+  padding: 40px;
+  margin: 10px;
+  margin-top: -50%;
+  margin-bottom: 50px;
+  text-align: center;
+
+  border-radius: 5px;
+
+}
+
+
+.kolonne2 h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.kolonne2 p {
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.baggrung-container {
+display: flex;
+justify-content: center;
+bottom: 0;
+top: 65%;
+text-align: center;
+padding-bottom: 20px;
+}
+
+.baggrund1 {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  width: 19%;
+  text-decoration: none;
+  font-size: 32px;
+  padding-bottom: 420px 5px;
+  margin: 0 0px;
+  border-radius: 10px;
+
+}
+
+
+
+.laes-mere2 {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 5px 10px;
+  background-color: #6cc73e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.forside-overskrift2 {
+  position: absolute;
+  font-size: 60px;
+  color: #162441;
+  margin-top: 125px;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+.streg-container2 {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 10px);
+  display: flex;
+  justify-content: center;
+}
+
+.tynd-streg2 {
+  width: 50%;
+  border-top: 1px solid black;
+  margin-top: 715px;
+}
+
+/* ------------------------------------- Footer -------------------------------- */
+
+
+
+    /* CSS-styling for footer */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #162441;
+        padding: 20px;
+        font-size: 22px;
+        width: 100%;
+      }
+  
+      .column {
+        flex-basis: 30%;
+      }
+      .column h3 {
+        color: #fdfdfb;
+        padding-bottom: 20px;
+        font-size: larger;
+      }
+      .column h4 {
+        color: #fdfdfb;
+        padding-bottom: 10px;
+      }
+  
+      .column p {
+        color: #fdfdfb;
+        padding-bottom: 20px;
+        font-size: smaller;
+      }
+
+      .some{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .some{
+        display: flex;
+        gap: 15px;
+        height: 60px;
+    }
+    .some_img{
+        height: 70px;
+
+    }
+
+      .column:last-child img {
+        position: relative;
+        bottom: 10px;
+        padding-top: 20px;
+        width: 70%;
+        max-width: 200px;
+      }
+  
+
